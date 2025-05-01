@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>単語テスト結果</title>
+</head>
+<body>
+    <h1>単語テスト</h1>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <tr>
+            <th>番号</th>
+            <th>単語</th>
+            <th>（解答欄）</th>
+            <th>意味（答え）</th>
+        </tr>
+        {% for i, word in enumerate(words, 1) %}
+        <tr>
+            <td>{{ i }}</td>
+            <td>{{ word.単語 }}</td>
+            <td>＿＿＿＿＿＿＿＿</td>
+            <td>{{ word.意味 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
